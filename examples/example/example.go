@@ -6,19 +6,20 @@ import (
 	"math/rand"
 	"os"
 
-	"github.com/dustin/go-heatmap"
-	"github.com/dustin/go-heatmap/schemes"
+	"github.com/senfung/go-heatmap"
+	"github.com/senfung/go-heatmap/schemes"
 )
 
 func main() {
 	points := []heatmap.DataPoint{}
-	for n := 0; n < 350; n++ {
-		points = append(points,
-			heatmap.P(rand.Float64(), rand.Float64()))
+	for i := 0; i < 10; i++ {
+		for j := 0; j < 10; j++ {
+			points = append(points, heatmap.P(float64(i), float64(j), rand.Int()))
+		}
 	}
 
-	// scheme, _ := schemes.FromImage("../schemes/fire.png")
-	scheme := schemes.AlphaFire
+	// scheme, _ := schemes.FromImage("../schemes/color_scheme.png")
+	scheme := schemes.Classic
 
 	img := heatmap.Heatmap(image.Rect(0, 0, 1024, 1024),
 		points, 150, 128, scheme)

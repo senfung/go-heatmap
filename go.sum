@@ -1,0 +1,4 @@
+github.com/dustin/go-heatmap v0.0.0-20180603032536-b89dbd73785a h1:o0oeorr6BKW/lHrT2NWX1CQn6LDhr5lvAPIIjTDC1bg=
+github.com/dustin/go-heatmap v0.0.0-20180603032536-b89dbd73785a/go.mod h1:VBmwC4U3p2SMEKr+/m5j0eby7rmUtSoA5TGLwe6P+3A=
+github.com/dustin/go-humanize v1.0.0 h1:VSnTsYCnlFHaM2/igO1h6X3HA71jcobQuxemgkq4zYo=
+github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
